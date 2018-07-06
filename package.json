@@ -14,7 +14,7 @@
     "dotenv": "^6.0.0",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
-    "express-imp-router": "^0.1.6",
+    "express-imp-router": "^0.1.7",
     "node-gitlab": "^1.6.0"
   }
 }
