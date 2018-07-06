@@ -13,14 +13,13 @@ impRouter.route({
   services: `${path.resolve('.')}/src/services`,
   routes: {
     '/api': {
+      _services: ['gitlab'],
       '/hook': {
-          get: 'HookController#recipe'
-        },
+        post: 'HookController#create',
+      },
       '/repositories': {
-        '_services': ['gitlabClient'],
-        get: 'RepositoryController#getAll',
         '/:id': {
-          get: 'RepositoryController#get',
+          post: 'RepositoryController#get',
         },
       }
     }
